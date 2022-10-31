@@ -1,4 +1,4 @@
-#MLAlgo
+# MLAlgo
 
 Python implementation of the following ML algorithms:
 - K-Nearest Neighbour
