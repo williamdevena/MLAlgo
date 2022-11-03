@@ -12,7 +12,9 @@ class KNN():
 
 	def fit(self, X_train, Y_train):
 		if not isinstance(X_train, np.ndarray):
-			X_train = np.array(X_train)
+			X_train = np.array(X_train) 
+		if not isinstance(Y_train, np.ndarray):
+			Y_train = np.array(Y_train)
 		if X_train.shape[0]!=Y_train.shape[0]:
 			print("Fit error, X_train and Y_train are of different shapes: " + str(X_train.shape) + " " + str(Y_train.shape))
 			return False
